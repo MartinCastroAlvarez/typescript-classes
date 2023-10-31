@@ -1,0 +1,33 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var persona_1 = require("./persona"); //
+var Cliente_1 = require("./Cliente"); //
+var Producto_1 = require("./Producto");
+var Organo_1 = require("./Organo");
+var Ni_o_1 = require("./Ni\u00F1o");
+var persona1 = new persona_1.Persona("Juan", "Pérez", new Date(1990, 0, 15), 175, 70, true);
+var persona2 = new Cliente_1.Cliente("Fede", "Lopez", new Date(1983, 3, 25), 190, 78, false, 2);
+var producto1 = new Producto_1.Producto("Leche", 500, 25);
+var producto2 = new Producto_1.Producto("Arroz", 300, 30);
+var producto3 = new Producto_1.Producto("Huevos", 1300, 15);
+var organo1 = new Organo_1.Organo("Higado", 10000, 30);
+var organo2 = new Organo_1.Organo("Pulmon", 15000, 40);
+var organo3 = new Organo_1.Organo("Vesicula", 20000, 50);
+var niño1 = new Ni_o_1.Niño("Juan", 50000, 5, 2);
+var niño2 = new Ni_o_1.Niño("María", 50000, 5, 1);
+var niño3 = new Ni_o_1.Niño("Pedro", 50000, 5, 0.4);
+console.log('esta todo bien');
+persona1.setNombre("NuevoNombre");
+console.log("Nombre: ".concat(persona1.getNombre()));
+console.log("Apellido: ".concat(persona1.getApellido()));
+console.log("Nombre: ".concat(persona2.getNombre()));
+console.log("Apellido: ".concat(persona2.getApellido()));
+console.log("Nombre: ".concat(producto1.getNombre()));
+console.log("Nombre: ".concat(producto2.getNombre()));
+console.log("Nombre: ".concat(producto3.getNombre()));
+console.log("Nombre: ".concat(organo1.getNombre()));
+console.log("Nombre: ".concat(organo2.getNombre()));
+console.log("Nombre: ".concat(organo3.getNombre()));
+console.log("Nombre: ".concat(niño1.getNombre()));
+console.log("Nombre: ".concat(niño2.getNombre()));
+console.log("Nombre: ".concat(niño3.getNombre()));
